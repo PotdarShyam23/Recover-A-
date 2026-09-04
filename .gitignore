@@ -1,0 +1,53 @@
+# ==============================================================================
+# RECOVERAI - GITIGNORE
+# ==============================================================================
+
+# 1. Environment & Secret Credentials (CRITICAL - NEVER COMMIT TO GITHUB)
+.env
+.env.*
+*.env
+**/.env
+**/.env.*
+**/*.env
+!.env.example
+!**/.env.example
+
+# 2. Dependencies
+node_modules/
+**/node_modules/
+
+# 3. Production Builds
+dist/
+**/dist/
+build/
+**/build/
+.next/
+out/
+
+# 4. Logs & Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+**/*.log
+*.err
+**/*.err
+
+# 5. Temporary & Scratch Files
+test_gemini.js
+**/test_gemini.js
+scratch/
+**/scratch/
+.system_generated/
+
+# 6. Operating System & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
